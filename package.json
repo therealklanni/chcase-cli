@@ -1,0 +1,54 @@
+{
+  "name": "chcase-cli",
+  "version": "1.0.0",
+  "description": "Convert names to specified case, i.e. camelcase.",
+  "author": "Kevin Lanni (https://github.com/therealklanni)",
+  "license": "MIT",
+  "keywords": [
+    "case",
+    "change",
+    "convert",
+    "camelcase",
+    "kebabcase",
+    "startcase",
+    "uppercase",
+    "lowercase",
+    "commandline",
+    "cli"
+  ],
+  "homepage": "https://github.com/therealklanni/chcase-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealklanni/chcase-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/therealklanni/chcase-cli/issues"
+  },
+  "main": "index.js",
+  "bin": {
+    "chcase": "index.js"
+  },
+  "scripts": {
+    "lint:fix": "eslint --fix --quiet --",
+    "lint": "eslint --",
+    "pre-commit": "lint-staged",
+    "start": "node .",
+    "test": "ava"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "map-stream": "^0.0.7",
+    "split": "^1.0.0",
+    "utf8-stream": "^0.0.0",
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "eslint": "^3.19.0",
+    "eslint-config-prettier": "^2.1.1",
+    "eslint-plugin-prettier": "^2.1.1",
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.2",
+    "prettier": "^1.3.1"
+  }
+}
